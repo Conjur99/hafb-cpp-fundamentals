@@ -18,7 +18,7 @@ $ cd <dest>  	# change dir, <dest> = path, .=current, ..=parents dir
 - File ext is `
 .cpp`
 
-## g++ Compiler
+## g++ Compiler for 1 file
 ```bash
 # To compile, -o for output file name
 $ g++ main.cpp -o main
@@ -26,6 +26,11 @@ $ g++ main.cpp -o main
 # To run
 $ ./main.exe
 ```
+
+## g++ Compiler for 2 files
+When library and header files with driver .cpp with "main()"
+- List all .cpp source file into one output file
+- Header file is included
 
 ### C++ File Template
 ```cpp
@@ -47,6 +52,7 @@ int main()
 //Add Doxygen (/** enter)
 //Add Markdown All-in-One
 //Add CMake and CMake Tools
+//Add Epitech header
 ```
 
 
