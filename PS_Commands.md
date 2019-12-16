@@ -48,3 +48,7 @@ int main()
 //Add Markdown All-in-One
 //Add CMake and CMake Tools
 ```
+
+
+## Scope
+- Local, then Global, then file
