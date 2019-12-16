@@ -16,6 +16,8 @@ int main()
     cout << "I see you are: " << age << endl;
 
     cout << "Integers are: " << sizeof(int) << " bytes." << endl;
+    cout << "Min integer values: " << INT32_MIN <<
+            "Max Integers: " << INT32_MAX << " bytes." << endl;
 
     return 0;
 
