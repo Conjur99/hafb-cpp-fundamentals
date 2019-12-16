@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
     // Calculate BMI formula: weight(kg) /[height(m)]^2
@@ -12,14 +13,18 @@ int main()
     cin >> weight;
     cout << "Your weight is: " << weight << endl;
 
+    //Convert to pounds
+    weight = weight * 2.024;
+
     // Enter height
     cout << "Enter your height (m)?" << endl;
     cin >> height;
     cout << "Your height is: " << height << endl;
+    height = height * 39.37;
 
     // Calculate BMI
-    bmi = weight /(height * height);
-    cout << "Your PMI is (kg/m2): " << bmi << endl;
+    bmi = (weight * 703) /(height * height);
+    cout << "Your PMI is (lb/ft2): " << bmi << endl;
     
     return 0;
 }
