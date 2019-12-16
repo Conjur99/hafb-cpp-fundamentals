@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-
+const float kMtersToInches = 39.37;
+const float kKiloToPounds = 2.204;
+const int kBMIImperial = 703;
 
 int main()
 {
@@ -14,16 +16,17 @@ int main()
     cout << "Your weight is: " << weight << endl;
 
     //Convert to pounds
-    weight = weight * 2.024;
+    weight = weight * kKiloToPounds;
 
     // Enter height
     cout << "Enter your height (m)?" << endl;
     cin >> height;
     cout << "Your height is: " << height << endl;
-    height = height * 39.37;
+    height = height * kMtersToInches;
 
     // Calculate BMI
-    bmi = (weight * 703) /(height * height);
+const int kBMIImperial = 703;
+    bmi = (weight * kBMIImperial) /(height * height);
     cout << "Your PMI is (lb/ft2): " << bmi << endl;
     
     return 0;
