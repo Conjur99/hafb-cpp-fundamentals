@@ -15,6 +15,8 @@ int main()
     cin >> age;
     cout << "I see you are: " << age << endl;
 
+    cout << "Integers are: " << sizeof(int) << " bytes." << endl;
+
     return 0;
 
 }
