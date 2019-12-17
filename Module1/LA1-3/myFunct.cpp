@@ -34,3 +34,45 @@ void UpdateStep(int& step)      //uses address of parameter
     //step = step +1
     cout << "New step: " << step << endl;
 }
+
+//Return the maximum of the two input numbers
+int Max2(int num1, int num2)
+{
+  if(num1 >= num2)
+  {
+    return num1;    // num1 is larger
+  }
+  else
+  {
+    return num2;
+  }
+  
+}
+
+//Return the maximum of the three input numbers
+int Max3(int num1, int num2, int num3)
+{
+  return(num3);     //TODO: fix this
+}
+
+//TODO: Where are the values in the array defined?
+int Max10(const std::array<int, 10>& nums)    //pass by constant address 
+{
+  int max = nums[0];
+  for(auto num : nums)
+  {
+    if(max <= num)
+    {
+      max = num;
+    }
+  }
+  return max;
+}
+
+void ClearElements(std::array<int,10>& nums)
+{
+  for(int index = 0; index < nums.size(); ++index)      
+  {
+    nums[index] = -99;    //set all values to -99
+  }
+}
