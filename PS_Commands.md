@@ -14,6 +14,7 @@ $ ls  			# list folder
 $ cd <dest>  	# change dir, <dest> = path, .=current, ..=parents dir
 $ mkdir <name>  # create folder
 $ cp <source> <dest>    # copy file <source> to <dest>
+$ h             # history list
 ```
 ## C++ Basics
 
@@ -65,6 +66,7 @@ Add plug-ins for new IDE
 
 ## Variable Scope
 - Looks first in Local, then Global, then file
+- "&" passes address, good for arrays, but like giving keys
 
 
 ## Build
