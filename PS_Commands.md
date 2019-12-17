@@ -13,7 +13,7 @@ $rm <filename>	# remove
 $ ls  			# list folder
 $ cd <dest>  	# change dir, <dest> = path, .=current, ..=parents dir
 $ mkdir <name>  # create folder
-$ cp <source> <dest>
+$ cp <source> <dest>    # copy file <source> to <dest>
 ```
 ## C++ Basics
 
@@ -52,6 +52,7 @@ int main()
 
 
 ## Plugins and Doxygen
+Add plug-ins for new IDE
 ```cpp
 //Add Code Spell extension
 //Add C/C++ Intellisense
@@ -67,9 +68,10 @@ int main()
 
 
 ## Build
-Need rules in `CMakeLists.txt` files
+- Need rules updated in `CMakeLists.txt` files
+  - main and library files, and target
 - Create folder `$ mkdir build`
 - Go to dir `$ cd build`
-- Run `$ cmake .. -G "MinGW Makefiles`   //To set up the make rules. ".." .txt file is up one level
+- Run `$ cmake .. -G "MinGW Makefiles`   // To set up the make rules. ".." .txt file is up one level
 - Build `$cmake --build .`             // "." current location (pwd)
 - Run `./main.exe`
