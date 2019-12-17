@@ -74,7 +74,7 @@ Add plug-ins for new IDE
   - main and library files, and target
 - Create folder `$ mkdir build`
 - Go to dir `$ cd build`
-- Run `$ cmake .. -G "MinGW Makefiles"
+- Run `$ cmake .. -G "MinGW Makefiles"`
 -    // To set up the make rules. ".." .txt file is up one level
 - Build `$cmake --build .`             // "." current location (pwd)
 - Run `./main.exe`
