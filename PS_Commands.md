@@ -13,6 +13,7 @@ $rm <filename>	# remove
 $ ls  			# list folder
 $ cd <dest>  	# change dir, <dest> = path, .=current, ..=parents dir
 $ mkdir <name>  # create folder
+$ cp <source> <dest>
 ```
 ## C++ Basics
 
