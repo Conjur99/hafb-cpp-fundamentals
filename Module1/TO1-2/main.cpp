@@ -7,6 +7,6 @@ int main()
 {
     FactorMod3();
     FactorModX(3);
-    FactorModXRange(3,200);
+    FactorModXRange(5,500);
     return 0;
 }

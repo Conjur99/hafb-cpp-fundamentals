@@ -9,6 +9,6 @@ void FactorMod3();                  //Input set at "3"
 
 void FactorModX(int mod_number);    //Input number (integer)
 
-void FactorModXRange(int mod_number, int max_range);    //Input number (integer)
+void FactorModXRange(int mod_number, int max_range);    //Input numbers (integer modulus and range)
 
 #endif /* !FACTOR_H_ */

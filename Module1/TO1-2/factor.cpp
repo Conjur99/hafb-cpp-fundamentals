@@ -37,6 +37,7 @@ void FactorModX(int mod_number)
  * @brief Calculate modulus of input parameter in input range
  * 
  * @param mod_number    //The divisible number
+ * @param max_range     // Range input
  */
 void FactorModXRange(int mod_number, int max_range)
 {
