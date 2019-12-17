@@ -12,11 +12,12 @@ $pwd			# present working dir
 $rm <filename>	# remove
 $ ls  			# list folder
 $ cd <dest>  	# change dir, <dest> = path, .=current, ..=parents dir
+$ mkdir <name>  # create folder
 ```
 ## C++ Basics
 
-- File ext is `
-.cpp`
+- File ext is `.cpp`
+- Header files: `.h`
 
 ## g++ Compiler for 1 file
 ```bash
@@ -31,6 +32,11 @@ $ ./main.exe
 When library and header files with driver .cpp with "main()"
 - List all .cpp source file into one output file
 - Header file is included
+For example library `function.cpp` and `funct.h` has a driver in `run_funct.cpp` which has main(), then to compile:
+$ g++ funtion.cpp run_funct.cpp -o function.exe
+
+
+
 
 ### C++ File Template
 ```cpp
@@ -58,3 +64,11 @@ int main()
 
 ## Scope
 - Local, then Global, then file
+
+## Build
+Need rules in `CMakeLists.txt` files
+- Create folder `$ mkdir build`
+- Go to dir `$ cd build`
+- Run `$ cmake .. -G "MinGW Makefiles`   //To set up the make rules. ".." .txt file is up one level
+- Build `$cmake --build .`             // "." current location (pwd)
+- Run `./main.exe`
