@@ -5,6 +5,10 @@ using namespace std;
 
 // factor.h
 
-void FactorMod3();
+void FactorMod3();                  //Input set at "3"
+
+void FactorModX(int mod_number);    //Input number (integer)
+
+void FactorModXRange(int mod_number, int max_range);    //Input number (integer)
 
 #endif /* !FACTOR_H_ */

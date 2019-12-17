@@ -47,7 +47,6 @@ int main()
 {
     return 0;
 }
-
 ```
 
 
@@ -62,8 +61,9 @@ int main()
 ```
 
 
-## Scope
-- Local, then Global, then file
+## Variable Scope
+- Looks first in Local, then Global, then file
+
 
 ## Build
 Need rules in `CMakeLists.txt` files

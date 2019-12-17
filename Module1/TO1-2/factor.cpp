@@ -12,5 +12,41 @@ void FactorMod3()
         count++;
         }   
    }
-   cout << "Result is: " << count;
+   cout << "Result is: " << count << endl;
+}
+
+/**
+ * @brief Calculate modulus of input parameter
+ * 
+ * @param mod_number    //The divisible number
+ */
+void FactorModX(int mod_number)
+{
+    unsigned int count = 0;
+   for(unsigned int x = 1; x <= 30; ++x)
+   {
+        if (x % mod_number == 0)
+        {
+        count++;
+        }   
+   }
+   cout << "Result is: " << count << endl;
+}
+
+/**
+ * @brief Calculate modulus of input parameter in input range
+ * 
+ * @param mod_number    //The divisible number
+ */
+void FactorModXRange(int mod_number, int max_range)
+{
+    unsigned int count = 0;
+   for(unsigned int x = 1; x <= max_range; ++x)
+   {
+        if (x % mod_number == 0)
+        {
+        count++;
+        }   
+   }
+   cout << "Result is: " << count << endl;
 }
