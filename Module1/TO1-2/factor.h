@@ -11,4 +11,5 @@ void FactorModX(int mod_number);    //Input number (integer)
 
 void FactorModXRange(int mod_number, int max_range);    //Input numbers (integer modulus and range)
 
+unsigned int GetFactorModXRange(int mod_number, int max_range);    //Returns count, Input numbers (integer modulus and range)
 #endif /* !FACTOR_H_ */
