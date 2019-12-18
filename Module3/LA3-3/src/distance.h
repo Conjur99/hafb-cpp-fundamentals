@@ -1,0 +1,1 @@
+//Define class for Distance with int feet and float inches
