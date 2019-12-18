@@ -1,6 +1,7 @@
 #include <array>
 #include <iostream>
 #include <string>
+#include <fstream> //for files
 
 using namespace std;
 
@@ -34,15 +35,71 @@ int main() {
       "George", "Sam",   "Walter", "Ann",   "Laura",  "Paul", "Phillip",
       "Susan",  "Hal",   "Olivia", "Polly", "Roy",    "Scott"};
 
-  // create a variable of type ofstream
+  // create a variable of type ofstream: output file from stream
+  ofstream commute_file;
+  commute_file.open("../commute.txt");
+  if(commute_file.fail())
+  {
+    cout << "Failed to open. \n Shutting down. \n";
+    return 1;
+  }
 
   // open the file commute.txt
+  for(int index =0; index < kMaxSize; ++index)
+  {
+    cout << commute_minutes[index] << ", " << commute_miles[index] << endl;
+    commute_file << commute_minutes[index] << "," << commute_miles[index] << endl;
+  }
 
   // write commute_minutes and commute_miles to the file commute.txt
 
-  // create a variable of type ofstream and open the file town.txt
+commute_file.close();
 
+  // create a variable of type ofstream and open the file town.txt
+  ofstream towns_file;
+  towns_file.open("../towns.txt");
+  if(towns_file.fail())
+  {
+    cout << "Failed to open. \n Shutting down. \n";
+    return 1;
+  }
+
+  // open the file commute.txt
+  for(int index =0; index < kMaxSize; ++index)
+  {
+    cout << towns[index] << ", " << names[index] << endl;
+    towns_file << towns[index] << "," << names[index] << endl;
+  }
+
+towns_file.close();
   // write the towns to the file town.txt
+
+  // Create csv file (utah_info.csv)
+    
+  // Header: minutes, miles, min/miles, name, town
+    ofstream all_data_file;
+  all_data_file.open("../utah_info.csv");
+  
+  string header = "minutes,miles,min/miles,name,town";
+  cout << header << endl;
+  all_data_file << header << endl;
+  
+  for(int index =0; index < kMaxSize; ++index)
+  {
+    cout << commute_minutes[index] << ", " 
+    << commute_miles[index] << ", "
+    << static_cast <float>(commute_minutes[index])/commute_miles[index] << ", " 
+    << names[index] << ", "
+    << towns[index] << endl;
+    
+    all_data_file << commute_minutes[index] << ","
+    << commute_miles[index] << ","
+    << static_cast <float>(commute_minutes[index])/commute_miles[index] << "," 
+    << names[index] << ","
+    << towns[index] << endl;
+  }
+
+  all_data_file.close();
 
   // create a variable of type ofstream and open the file commute_data.txt
 

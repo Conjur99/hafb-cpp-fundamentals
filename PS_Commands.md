@@ -67,6 +67,8 @@ Add plug-ins for new IDE
 ## Variable Scope
 - Looks first in Local, then Global, then file
 - "&" passes address, good for arrays, but like giving keys
+- Objects: "dot"
+  - string s1.find
 
 
 ## Build
@@ -78,3 +80,14 @@ Add plug-ins for new IDE
 -    // To set up the make rules. ".." .txt file is up one level
 - Build `$cmake --build .`             // "." current location (pwd)
 - Run `./main.exe`
+
+
+##Include Libraries
+- Array
+- iostream      //basic I/O
+- string
+- files
+  - Check if can open: in.fail()
+  - Open and close files
+  - Condition: while( "not at EOF" )
+  - Format before loading
