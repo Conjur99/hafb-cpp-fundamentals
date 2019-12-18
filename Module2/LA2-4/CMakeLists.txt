@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(LA2.4 LANGUAGES CXX)
+project(LA3.1 LANGUAGES CXX)
 
 # require C++14
 set(CMAKE_CXX_STANDARD 14)
