@@ -11,6 +11,7 @@
 
 #pragma  once
 #include <iostream>
+using namespace std;
 
 // Create a class, declaration
 class Carton                //convention is capitalized
@@ -21,9 +22,17 @@ class Carton                //convention is capitalized
         double height_;
 
     public:
+        //Static constants, declaration
+        // static const double kMaxSize;       //For all dimensions
+        static const double kMinLength;
+        static const double kMinWidth;
+        static const double kMinHeight;
+        
         //constructor: create objects
         Carton();               //same as class
         Carton(double length, double width, double height);
+        ~Carton();
+
         // Getters (lower case)
         double length();
         double width();
@@ -37,6 +46,9 @@ class Carton                //convention is capitalized
         //Other methods (upper case)
         void ShowInfo();
 
+        void SetMeasurements(double length, double width, double height);
+
+        double Volume() const;      //Does not allow to update because of "const". Read only.
 
 };      //must have ";"
 

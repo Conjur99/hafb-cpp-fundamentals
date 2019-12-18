@@ -1,7 +1,9 @@
 #include <iostream>
 #include "carton.h"
+#include <array>
 
 using namespace std;
+const int kMaxSize =10;
 
 int main() 
 {
@@ -17,12 +19,27 @@ int main()
   Carton box2(34,89,11);
   box2.ShowInfo();
 
+  Carton box3(2,4,6);
+
   // create an array of Cartons
+
+  std:array<Carton, kMaxSize> boxes;
 
   // add some valid elements to the array
 
-  // loop through the array
+  boxes[0] = Carton(21, 41, 52);
+  boxes[1] = Carton(2, 4, 5);
+  boxes[2] = Carton(1, 4, 2);
+  boxes[3] = Carton(121, 141, 152);
 
+
+
+  // loop through the array
+  cout << "Printing array: " << endl;
+  for(auto box : boxes)
+  {
+    box.ShowInfo();
+  }
   // print out the volume of packages
 
   // print out the girth of packages
