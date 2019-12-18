@@ -91,3 +91,6 @@ Add plug-ins for new IDE
   - Open and close files
   - Condition: while( "not at EOF" )
   - Format before loading
+
+
+https://icarus.cs.weber.edu/~hvalle/hafb/hafb-module3.zip
