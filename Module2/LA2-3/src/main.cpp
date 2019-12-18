@@ -53,7 +53,7 @@ int main() {
 
   // write commute_minutes and commute_miles to the file commute.txt
 
-commute_file.close();
+  commute_file.close();
 
   // create a variable of type ofstream and open the file town.txt
   ofstream towns_file;
@@ -71,7 +71,8 @@ commute_file.close();
     towns_file << towns[index] << "," << names[index] << endl;
   }
 
-towns_file.close();
+  towns_file.close();
+  
   // write the towns to the file town.txt
 
   // Create csv file (utah_info.csv)

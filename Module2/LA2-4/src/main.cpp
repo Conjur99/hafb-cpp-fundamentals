@@ -1,11 +1,21 @@
 #include <iostream>
+#include "carton.h"
 
 using namespace std;
 
-int main() {
+int main() 
+{
   // create a Carton object using the default constructor
+  Carton box;
+  box.ShowInfo(); 
+  box.set_height(12.5);
+  box.set_length(22.1);
+  box.set_width(13.4);
+  box.ShowInfo(); 
 
   // create a Carton object using the other constructor
+  Carton box2(34,89,11);
+  box2.ShowInfo();
 
   // create an array of Cartons
 
