@@ -4,3 +4,9 @@
 #include <iostream>
 using namespace std;
 #include "distance.h"
+
+    //Display as 2'-9" format
+    void Distance::ShowDist() const
+    {
+        std::cout << feet() << "\'-" << inches() << "\"" << std::endl;
+    }

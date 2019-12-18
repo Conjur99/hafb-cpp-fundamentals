@@ -5,5 +5,8 @@ using namespace std;
 // Main Function
 int main() 
 {
+    Distance d1(34,9.5);
+    d1.ShowDist;    //TODO: not tested
+
   return 0;
 }
