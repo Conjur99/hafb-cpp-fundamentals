@@ -11,6 +11,7 @@
 
 #pragma  once
 #include <iostream>
+
 using namespace std;
 
 // Create a class, declaration
@@ -49,6 +50,9 @@ class Carton                //convention is capitalized
         void SetMeasurements(double length, double width, double height);
 
         double Volume() const;      //Does not allow to update because of "const". Read only.
+
+        void WriteData(std::ostream &out) const;
+
 
 };      //must have ";"
 
