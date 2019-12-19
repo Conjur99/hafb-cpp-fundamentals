@@ -13,17 +13,11 @@ public:
     // Getter/Setter
     int feet() const {return feet_;}
     void set_feet(int feet) {feet_ = feet;}
-    int inches() const {return inches_;}
+    float inches() const {return inches_;}
     void set_inches(int inches) {inches_ = inches;}
 
     //Other methods
     void ShowDist() const;
+
+    Distance operator + (Distance rhs) const;
 };
-
-D::D(/* args */)
-{
-}
-
-D::~D()
-{
-}

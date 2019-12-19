@@ -79,7 +79,7 @@ Add plug-ins for new IDE
 - Run `$ cmake .. -G "MinGW Makefiles"`
 -    // To set up the make rules. ".." .txt file is up one level
 - Build `$cmake --build .`             // "." current location (pwd)
-- Run `./main.exe`
+- Run `./main.exe` or `.\bin\ca.exe'
 
 
 ##Include Libraries
