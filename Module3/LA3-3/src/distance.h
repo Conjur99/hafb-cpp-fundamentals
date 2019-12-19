@@ -20,4 +20,7 @@ public:
     void ShowDist() const;
 
     Distance operator + (Distance rhs) const;
+
+    // pass read-only reference to an output stream
+    friend std::ostream& operator << (std::ostream& os, const Distance& distance);
 };

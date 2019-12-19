@@ -6,17 +6,23 @@ using namespace std;
 int main() 
 {
     Distance d1(34,9.5);
-    d1.ShowDist();    //TODO: not tested
+    d1.ShowDist();    
 
     Distance d2(10,9.5);
     d2.ShowDist();
 
     Distance d3;
 
-    d3 = d1 + d2;    //need to define operator "+"
+    d3 = d1 + d2;    
 
     // Display computed value
     d3.ShowDist();
+
+    Distance d4 = d1 + d2 + d3;
+    d4.ShowDist();
+    
+    //Display with
+    std::cout << d4 << std::endl;
 
     return 0;
 }
