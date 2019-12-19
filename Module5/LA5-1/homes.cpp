@@ -29,6 +29,7 @@ int main()
     house.kitchen.width.feet = 30;
     house.kitchen.width.inches = 0;
 
+    ShowHomeRoom(house);
     return 0;
 }
 
