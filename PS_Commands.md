@@ -94,3 +94,6 @@ Add plug-ins for new IDE
 
 
 https://icarus.cs.weber.edu/~hvalle/hafb/hafb-module3.zip
+
+##Test
+- Catch2
