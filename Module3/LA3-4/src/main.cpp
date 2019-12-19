@@ -11,33 +11,42 @@ int main()
     Distance d2(10,9.5);
     d2.ShowDist();
 
-    Distance d3;
+    // Distance d3;
 
-    d3 = d1 + d2;    
+    // d3 = d1 + d2;    
 
-    // Display computed value
-    d3.ShowDist();
+    // // Display computed value
+    // d3.ShowDist();
 
-    Distance d4 = d1 + d2 + d3;
-    d4.ShowDist();
+    // Distance d4 = d1 + d2 + d3;
+    // d4.ShowDist();
     
     //Display with
-    std::cout << d4 << std::endl;
+    //std::cout << d4 << std::endl;
 
-    // Subtract
-    Distance d5(12,6.6);
-    d5.ShowDist(); 
+    // // Subtract
+    // Distance d5(12,6.6);
+    // d5.ShowDist(); 
     
-    Distance d6(3,10.8);
-    d6.ShowDist();
+    // Distance d6(3,10.8);
+    // d6.ShowDist();
     
-    Distance d7 = d5 - d6;
-    d7.ShowDist();
+    // Distance d7 = d5 - d6;
+    // d7.ShowDist();
  
-    if(d1 < d2)
-    {
-        std::cout << d1 << "is less than " << d2 << std::endl;
-    }
+    // if(d1 < d2)          //Compare Not finished, returns bollean
+    // {
+    //     std::cout << d1 << "is less than " << d2 << std::endl;
+    // }
 
+    //set to equal
+    d2 = d1;
+    std::cout << d2 << " and " << d1 << std::endl;
+    //Not assigned
+    Distance d3 = d2;
+    std::cout << d3 << " and " << d2 << std::endl;
+
+    Distance d4(d2);
+    std::cout << d4 << " and " << d2 << std::endl;
     return 0;
 }

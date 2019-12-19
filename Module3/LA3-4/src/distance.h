@@ -9,6 +9,10 @@ private:
 public:
     Distance() : feet_(0), inches_(0) {}
     Distance(int feet, float inches) : feet_(feet), inches_(inches) {}
+
+    //Create copy of object itself 
+    Distance(const Distance& dist);     //Copy constructor
+
     ~Distance() {};
 
     // Getter/Setter
@@ -27,11 +31,17 @@ public:
     friend std::ostream& operator << (std::ostream& os, const Distance& distance);
 
     //Create "-" operator
-    Distance operator - (Distance rhs) const;
+    //Distance operator - (Distance rhs) const;
+
+    // Minus performed by another object
+    friend Distance operator - (Distance lhs, Distance rhs);
 
     // Update function
     void update_distance(int ft, float in); 
 
     bool operator < (Distance rhs) const; //compare objects
     bool operator == (Distance rhs) const; //equals objects
+
+    //Assigning
+    Distance operator = (Distance& rhs);
 };
