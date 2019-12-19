@@ -30,4 +30,19 @@ int main()
     }
     std::cout << "Set has " << numbers.size() << " element" << std::endl;
 
+    //Iterate
+    for(auto it = std::begin(numbers); it != std::end(numbers); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+
+    //Range based
+    for( const auto& value: numbers)
+    {
+        std::cout << value << " ";
+    }
+    std::cout << std::endl;
+
+
 }
