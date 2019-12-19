@@ -31,7 +31,7 @@ int main()
     Distance d6(3,10.8);
     d6.ShowDist();
     
-    Distance d7 = d5 - d4;
+    Distance d7 = d5 - d6;
     d7.ShowDist();
  
     if(d1 < d2)

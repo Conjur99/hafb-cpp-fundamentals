@@ -12,7 +12,7 @@ void Distance::ShowDist() const
 }
 
 // Create operator to combine two distances
-Distance Distance::operator + (Distance rhs) const
+Distance Distance::operator+(Distance rhs) const
 {
     int feet = feet_ + rhs.feet_;
     float inches = inches_ + rhs.inches_;
@@ -28,16 +28,16 @@ Distance Distance::operator + (Distance rhs) const
 
 // Define "<<"" operator
 // returning ref to output stream "os"
-// Do not include '\n' or endl, let user define 
-    std::ostream& operator << (std::ostream& os, const Distance& distance)
-    {
-        os << "feet: " << distance.feet_ << " inches: " << distance.inches_;
-        
-        return os;
-    }
+// Do not include '\n' or endl, let user define
+std::ostream &operator<<(std::ostream &os, const Distance &distance)
+{
+    os << "feet: " << distance.feet_ << " inches: " << distance.inches_;
+
+    return os;
+}
 
 // Define "-" operator
-void Distance::operator - (Distance rhs) const
+Distance Distance::operator - (Distance rhs) const
 {
     int ft = feet_ - rhs.feet_;
     float in = 0;
@@ -46,21 +46,40 @@ void Distance::operator - (Distance rhs) const
     if (inches_ < rhs.inches_)
     {
         ft -= 1;
-        in = (inches_ +12) - rhs.inches_;
+        in = (inches_ + 12) - rhs.inches_;
     }
     return Distance(ft, in);
 }
-    
+
 // Update function
 void Distance::update_distance(int ft, float in)
-    {
-        set_feet(ft);
-        set_inches(in);
-    }
+{
+    set_feet(ft);
+    set_inches(in);
+}
 
 //Compare function
-bool Distance::operator < (Distance rhs) const
+bool Distance::operator<(Distance rhs) const
 {
+    float ft1 = feet_ + inches_ / 12.0; //convert inches to feet
+    float ft2 = rhs.feet_ + rhs.inches_ / 12.0;
+    if (ft1 < ft2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
-    return 
-} 
+//Equals operator "==", both ft and in are the same
+bool Distance::operator==(Distance rhs) const
+{
+    float ft1 = feet_ + inches_ / 12.0;
+    float ft2 = rhs.feet_ + rhs.inches_ / 12.0;
+    
+        return (ft1 == ft2)
+        ? true
+        : false;
+}

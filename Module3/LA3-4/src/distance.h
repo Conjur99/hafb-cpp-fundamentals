@@ -33,4 +33,5 @@ public:
     void update_distance(int ft, float in); 
 
     bool operator < (Distance rhs) const; //compare objects
+    bool operator == (Distance rhs) const; //equals objects
 };
