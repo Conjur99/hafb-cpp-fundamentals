@@ -14,6 +14,7 @@ $ ls  			# list folder
 $ cd <dest>  	# change dir, <dest> = path, .=current, ..=parents dir
 $ mkdir <name>  # create folder
 $ cp <source> <dest>    # copy file <source> to <dest>
+                #cp ../../TO3-1/src/main.cpp .
 $ h             # history list
 ```
 ## C++ Basics
