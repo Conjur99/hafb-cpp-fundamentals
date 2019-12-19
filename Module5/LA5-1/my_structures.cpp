@@ -10,6 +10,14 @@ struct Part
    float cost;
 };
 
+struct Car
+{
+   Part doors;
+   Part windows;
+   Part tires;
+};
+
+
 // Local Prototypes
 
 int main()
@@ -35,5 +43,11 @@ int main()
    // << " part: " << part2.part_num  
    // << " cost $ " << part2.cost << std::endl;
    
+   //Car
+   Car sedan;
+   sedan.doors.part_num = 101;
+   sedan.windows.model_num = 7001;
+   sedan.tires.cost = 89.99;
+
       return 0;
 }
